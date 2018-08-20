@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Тестовое задание</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header class="header">
+       <div class="container">
+           <div class="logo"></div>
+            <div class="circle">
+               <div class="circle-left">
+                    <ul class="circle-left-ul">
+                        <li>
+                            <p>Lorem ipsum dolor sit amet, simple </p>
+                            <div class="small_circle right"></div>
+                        </li>
+                        <li class="clear">
+                           <p>Lorem ipsum dolor sit amet, simple </p>
+                           <div class="small_circle right"></div>
+                        </li>
+                        <li class="clear">
+                            <p>Lorem ipsum dolor sit amet, simple </p>  <div class="small_circle right"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="circle-right">
+                    <ul class="circle-right-ul">
+                        <li>
+                            <div class="small_circle left"></div>
+                            <p>Lorem ipsum dolor sit amet, simple </p>
+                        </li>
+                        <li class="clear">
+                           <div class="small_circle left"></div>
+                           <p>Lorem ipsum dolor sit amet, simple </p>
+                        </li>
+                        <li class="clear">
+                            <div class="small_circle left"></div>
+                            <p>Lorem ipsum dolor sit amet, simple </p>  
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+       <div class="container">
+       <div id="main-info">
+           <div class="wraper">
+            <div id="info">
+               <div class="main-circle left"></div>
+                <p><strong>Lorem ipsum dolor sit amet.</strong></p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae tenetur eveniet sed beatae cupiditate vitae pariatur odio, reiciendis animi non, deleniti vero ullam aut voluptate, illo sequi praesentium magnam, veniam!</p>
+            </div>
+            <div id="like">
+              <ul>
+                  <li>Like</li>
+                  <li>557</li>
+                  <li>Share</li>
+                  <li>351</li>
+              </ul>
+            </div>
+            </div>
+             <div class="list-product">
+                 <div class="product">
+                   <input type="checkbox" id="colorbox">
+                    <label for="colorbox">
+                    <div class="image-green image1"></div>
+                     </label>
+                     <h3>heading</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum alias eos nihil atque maiores unde hic, a quos, consectetur ab quidem sequi quibusdam nemo, perferendis! Dignissimos, sequi, consequatur. Earum, repellendus.</p>
+                 </div>
+                 <div class="product">
+                   <input type="checkbox" id="colorbox2">
+                    <label for="colorbox2">
+                    <div class="image-green image2"></div>
+                     </label>
+                     <h3>heading</h3>
+                     <p>Mollitia iste, exercitationem praesentium, hic dolore quaerat illo facilis eos accusamus, esse voluptates. Dolorum consectetur qui amet vero voluptate a nemo animi dicta ducimus, ex dolor cupiditate rem iusto tempore!</p>
+                 </div>
+                 <div class="product">
+                    <input type="checkbox" id="colorbox3">
+                    <label for="colorbox3">
+                    <div class="image-turquoise image3"></div>
+                     </label>
+                     <h3>heading</h3>
+                     <p>Expedita temporibus tempora officiis inventore sequi, culpa in minus nemo vero amet possimus corporis sapiente esse iusto natus tenetur explicabo, itaque nihil harum a aliquam numquam. Nostrum nemo quibusdam eaque.</p>
+                 </div>                   
+             </div>
+        <input type="button" value="order" id="btn">
+        </div>
+        <div id="sidebar"></div>
+        </div>
+        <div class="clear"></div>
+    </main>
+    <footer class="footer">
+        <p>© 2014 Company Name. All rights reserved.</p>
+    </footer>
+    <script>
+    var product = document.getElementsByClassName('product');
+        if(product.length%2==0)
+            {
+                document.getElementById('btn').style.top = '10px';
+            }
+    var main = document.getElementById('main-info');
+    var info = document.getElementById('info');  
+    document.getElementById('sidebar').style.height = main.offsetHeight+'px'; 
+    window.onresize = function()
+    {
+        document.getElementById('like').style.height = info.offsetHeight+'px'; 
+        document.getElementById('sidebar').style.height = main.offsetHeight+'px'; 
+    }
+    </script>
+</body>
+</html>
